@@ -1,0 +1,42 @@
+/**
+   main style file 
+*/
+body {
+    font-family: verdana, sans-serif, monospace;
+    text-align: left;
+    position: fixed;
+    background: #eef;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.send {
+    cursor: pointer;
+    background: #3b5998;
+    border: 3px solid #3b5998;
+    border-radius: 5px;
+    color: white;
+}
+
+#age-notif, #email-notif {
+    color: red;
+}
+
+
+.block {
+    border: solid #3b5998;
+    border-width: 2px 2px 2px 2px;
+    background: #ddf;
+    border-radius: 8px;    
+    display: inline-block;
+    padding: 5px;
+}
+
+
+.frm-edit {
+    background: #ddf;
+    border: 2px solid #3b5998;
+    border-radius: 8px;    
+    padding-left: 4px;
+    padding-right: 4px;
+}
