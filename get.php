@@ -33,9 +33,8 @@ if ($db === false) {
     } else {
         $a = mysqli_fetch_all($res, MYSQLI_ASSOC);
         $res = "";
-        $v['age'] = (int)$v['age'];
         foreach ($a as $k => $v) {
-            $word = getCorrectAgeWord($v['age']);
+            $word = getCorrectAgeWord((int)$v['age']);
             $n = $beg + $k + 1;
             $res .= "<p>$n. ${v['surname']} ${v['name']}, ${v['age']} $word</p>\n";
         }

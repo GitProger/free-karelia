@@ -11,6 +11,7 @@ function request($db, $sql) {
     return true;
 }
 
+
 $db = mysqli_connect(
     $conf["server"], 
     $conf["user"], 
@@ -29,7 +30,7 @@ if ($db === false) {
             mail      VARCHAR(330),
             code      VARCHAR(64),
             ok        BOOLEAN
-        )";
+        ) CHARACTER SET=utf8";
     request($db, $new_tab);
 
     $name    = addslashes($_POST['name'   ]);
@@ -53,9 +54,9 @@ if ($db === false) {
                 echo "Спасибо за участие. Подтвердите, пожалуйста, подпись через электронную почту.";
 
             $link = "http://free-karelia/verify.php?c=$code";
-            $msg = "<a href=$link>Перейдите по ссылке, чтобы подтвердить подпись. </a>";
+            $msg = "$surname $name, перейдите по <a href=\"$link\">ссылке</a>, чтобы подтвердить подпись.";
             $msg = wordwrap($msg, 70, "\r\n");
-            mail($_POST['email'], "Подтвердите подпись", $msg);
+            mail($_POST['email'], "Подтвердите подпись", $msg, "Content-Type: text/html\r\n");
         }
     }
 }

@@ -11,6 +11,9 @@
         <script src="js/main.js" type="text/javascript"></script>
     </head>
     <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v7.0" nonce="shz3mlrE"></script>
+
         <div>
             <?php include "html/description.html"; ?>
         </div>
@@ -30,5 +33,10 @@
                 <input class="send" type="submit" value="Подписать">
             </form>
         </div>
+
+        <br> <br>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" 
+            data-layout="button_count"  data-action="like" 
+            data-size="large" data-share="false"></div><!-- "button" instead of "button_count" -->        
     </body>
 </html>
