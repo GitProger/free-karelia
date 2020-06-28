@@ -4,8 +4,8 @@
 body {
     font-family: verdana, sans-serif, monospace;
     text-align: left;
-    position: fixed;
     background: #eef;
+    position: center;
     margin-left: 15%;
     margin-right: 15%;
 }
