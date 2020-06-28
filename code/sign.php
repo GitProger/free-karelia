@@ -56,7 +56,7 @@ if ($db === false) {
             $link = "http://free-karelia/verify.php?c=$code";
             $msg = "$surname $name, перейдите по <a href=\"$link\">ссылке</a>, чтобы подтвердить подпись.";
             $msg = wordwrap($msg, 70, "\r\n");
-            mail($_POST['email'], "Подтвердите подпись", $msg, "Content-Type: text/html\r\nFrom: sasha.f-m@mail.ru");
+            mail($_POST['email'], "Подтвердите подпись", $msg, "Content-Type: text/html\r\n");
         }
     }
 }
