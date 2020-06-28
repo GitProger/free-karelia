@@ -36,7 +36,7 @@
 
         <br> <br>
         <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" 
-            data-layout="button_count"  data-action="like" 
+            data-layout="button_count" data-action="like" 
             data-size="large" data-share="false"></div><!-- "button" instead of "button_count" -->        
     </body>
 </html>

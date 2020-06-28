@@ -33,10 +33,10 @@ if ($db === false) {
         ) CHARACTER SET=utf8";
     request($db, $new_tab);
 
-    $name    = addslashes($_POST['name'   ]);
-    $surname = addslashes($_POST['surname']);
-    $age     = addslashes($_POST['age'    ]);
-    $email   = addslashes($_POST['email'  ]);
+    $name    = htmlentities(addslashes($_POST['name'   ]));
+    $surname = htmlentities(addslashes($_POST['surname']));
+    $age     = htmlentities(addslashes($_POST['age'    ]));
+    $email   = htmlentities(addslashes($_POST['email'  ]));
 
     if ($name && $surname && $age && $email) {
         $exist_qr = mysqli_query($db, "SELECT EXISTS (SELECT * FROM people WHERE mail = '$email')");
@@ -56,7 +56,7 @@ if ($db === false) {
             $link = "http://free-karelia/verify.php?c=$code";
             $msg = "$surname $name, перейдите по <a href=\"$link\">ссылке</a>, чтобы подтвердить подпись.";
             $msg = wordwrap($msg, 70, "\r\n");
-            mail($_POST['email'], "Подтвердите подпись", $msg, "Content-Type: text/html\r\n");
+            mail($_POST['email'], "Подтвердите подпись", $msg, "Content-Type: text/html\r\nFrom: sasha.f-m@mail.ru");
         }
     }
 }
