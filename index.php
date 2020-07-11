@@ -35,7 +35,7 @@
         </div>
 
         <br> <br>
-        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" 
+        <div class="fb-like" data-href="http://free-karelia.ru/" data-width="" 
             data-layout="button_count" data-action="like" 
             data-size="large" data-share="false"></div><!-- "button" instead of "button_count" -->        
     </body>
