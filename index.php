@@ -7,6 +7,7 @@
         <meta name="description" content="Карелия, Выборг, Финляндия">
         <link href="favicon.png" rel="shortcut icon">
         <link href="css/main.css" rel="stylesheet">
+        <link href="css/desc.css" rel="stylesheet">
         <script src="js/jquery-3.5.0.min.js" type="text/javascript"></script>
         <script src="js/main.js" type="text/javascript"></script>
     </head>
@@ -17,6 +18,7 @@
         <div>
             <?php include "html/description.html"; ?>
         </div>
+        <hr>
         <div class="block">
             Поставить подпись <br>
             <form method="POST" action="sign.php" id="sign" style="width: 30em">
@@ -37,6 +39,7 @@
         <br> <br>
         <div class="fb-like" data-href="http://free-karelia.ru/" data-width="" 
             data-layout="button_count" data-action="like" 
-            data-size="large" data-share="false"></div><!-- "button" instead of "button_count" -->        
+            data-size="large" data-share="false"></div>
+        <!-- "button" instead of "button_count" -->        
     </body>
 </html>

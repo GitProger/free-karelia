@@ -1,0 +1,36 @@
+.pic-block {
+    border-width: 1px;
+    border: solid black;
+    background: white;    
+}
+
+.invaded {
+    float: right;
+    max-width: 250px;
+    margin-left: 10px;
+}
+
+.photo {
+    height: 200px;
+    margin: 1px;
+}
+
+.picture {
+    vertical-align: top;
+    text-align: center;
+    line-height: normal;    
+}
+.pic-txt {
+    max-width: 100%;
+    font-size: 0.8em;
+}
+
+.gallery {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a { color: #00f; }
+a:visited { color: #00f; }
