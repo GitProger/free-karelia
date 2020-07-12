@@ -15,4 +15,23 @@ $(document).ready(function () {
             return;
         event.preventDefault();
     });
+
+    var inView = false;
+    function toggleContent() {
+        $("#content").toggle(500);
+        $("#view").toggle(500);
+        inView = !inView;
+    }
+    $(".picture").click(function () {
+        $("#showImg").attr("src", $(this).attr("src"));
+        toggleContent();
+    });
+
+    $(document).keydown(function (e) {
+        if ([10, 13, 27, 32].indexOf(e.which) !== -1 && inView) {
+            toggleContent();
+        }
+    });
+    $(document).dblclick(toggleContent);
+    $("#return").click(toggleContent);
 });

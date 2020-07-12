@@ -2,9 +2,12 @@
    main style file 
 */
 body {
+    background: #eef;    
+}
+
+#content {
     font-family: verdana, sans-serif, monospace;
     text-align: left;
-    background: #eef;
     position: center;
     margin-left: 10%;
     margin-right: 10%;
@@ -39,4 +42,26 @@ body {
     border-radius: 8px;    
     padding-left: 4px;
     padding-right: 4px;
+}
+
+
+
+#view {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+#showImg { height: 95%; }
+
+#return {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    background: #ddd;
 }
