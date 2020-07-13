@@ -16,5 +16,6 @@
         </div>
         <br>
         <a href="list.php">Список подписавших петицию</a>
+        <?php include "code/footer.php"; ?>
     </body>
 </html>

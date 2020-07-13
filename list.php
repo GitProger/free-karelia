@@ -14,5 +14,6 @@
         <div id="list"> 
         </div>
         <button id="more" class="send"> Ещё </button>
+        <?php include "code/footer.php"; ?>
     </body>
 </html>

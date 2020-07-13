@@ -45,7 +45,8 @@
             <div class="fb-like" data-href="http://free-karelia.ru/" data-width="" 
                 data-layout="button_count" data-action="like" 
                 data-size="large" data-share="false"></div>
-            <!-- "button" instead of "button_count" -->        
+            <!-- "button" instead of "button_count" -->
+            <?php include "code/footer.php"; ?>
         </div> <!-- content -->
     </body>
 </html>

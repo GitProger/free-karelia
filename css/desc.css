@@ -30,6 +30,7 @@
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+    border-radius: 8px;
 }
 
 a { color: #00f; }

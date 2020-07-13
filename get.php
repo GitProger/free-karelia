@@ -23,7 +23,7 @@ $db = mysqli_connect(
 );
 
 if ($db === false) {
-	echo "";
+    echo "";
 } else {
     $beg = $page * 100;
     $sql = "SELECT * FROM people WHERE ok = 1 ORDER BY surname, name LIMIT $beg, 100";

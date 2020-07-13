@@ -53,10 +53,11 @@ if ($db === false) {
             if (request($db, $save_query))
                 echo "Спасибо за участие. Подтвердите, пожалуйста, подпись через электронную почту.";
 
-            $link = "http://free-karelia/verify.php?c=$code";
+            $host = "free-karelia";
+            $link = "http://$host/verify.php?c=$code";
             $msg = "$surname $name, перейдите по <a href=\"$link\">ссылке</a>, чтобы подтвердить подпись.";
             $msg = wordwrap($msg, 70, "\r\n");
-            mail($_POST['email'], "Подтвердите подпись", $msg, "Content-Type: text/html\r\n");
+            mail($_POST['email'], "Подтвердите подпись", $msg, "Content-Type: text/html\r\nFrom: sasha.f-m@mail.ru");
         }
     }
 }
